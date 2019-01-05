@@ -30,7 +30,7 @@ Specify baseUrl, paths and typeRoots in compilerOptions key.
 
 Install npm module which does **not have** a definition file.
 
-In the sample below, I installed electron-log-rotate npm module.
+In the sample below, I installed electron-log-rotate of npm module.
 
 ```bash
 $ yarn add electron-log-rotate
@@ -51,6 +51,12 @@ So, You use which it does not have a definition file.
 
 ```javascript
 import { setup, log } from 'electron-log-rotate';
+```
+
+and To build TypeScript.
+
+```bash
+$ tsc
 ```
 
 There is no error.

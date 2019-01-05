@@ -1,0 +1,20 @@
+{
+  "name": "tsc-definition-.d.ts",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "hisasann",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -p tsconfig.json -w",
+    "start": "npm run build && node dist/index.js",
+    "tsc:init": "tsc --init"
+  },
+  "dependencies": {
+    "electron-log-rotate": "^1.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "typescript": "^3.2.2"
+  }
+}

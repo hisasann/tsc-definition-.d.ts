@@ -1,0 +1,56 @@
+# :lipstick: tsc-definition-.d.ts :lipstick:
+
+This repository explains making basic TypeScript Definitely Typed.
+
+Install typescript module.
+
+```bash
+$ yarn add typescript --dev
+```
+
+Make the `tscconfig.json` file.
+
+```bash
+$ npx tsc --init
+```
+
+Specify baseUrl, paths and typeRoots in compilerOptions key.
+
+```json
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {"*": ["types/*"]},
+    "typeRoots": ["types", "node_modules/@types"]
+  },
+  "include": ["app/**/*.ts"],
+  "exclude": ["node_modules"]
+}
+```
+
+Install npm module which does **not have** a definition file.
+
+In the sample below, I installed electron-log-rotate npm module.
+
+```bash
+$ yarn add electron-log-rotate
+```
+
+Create the `types` directory in the Root directory.
+
+`types/electron-log-rotate/index.d.ts`
+
+Define functions which it needs.
+
+```javascript
+export function setup(encoded: object): void;
+export function log(encoded: string): void;
+```
+
+So, You use which it does not have a definition file.
+
+```javascript
+import { setup, log } from 'electron-log-rotate';
+```
+
+There is no error.

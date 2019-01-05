@@ -1,5 +1,7 @@
 # :lipstick: tsc-definition-.d.ts :lipstick:
 
+## Description
+
 This repository explains making basic TypeScript Definitely Typed.
 
 Install typescript module.
@@ -60,3 +62,13 @@ $ tsc
 ```
 
 There is no error.
+
+via: [TypeScriptプロジェクトに独自の型定義を配置する方法 - Qiita](https://qiita.com/mtgto/items/e30d1529ca298e49557e)
+
+## Maintainers
+
+ - [hisasann](https://github.com/hisasann)
+
+## License
+
+ MIT © [hisasann](https://github.com/hisasann)
